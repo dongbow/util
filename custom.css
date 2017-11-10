@@ -1,0 +1,98 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+#content {
+    margin: 10px auto 0 8px;
+    width: 400px;
+    height: auto;
+}
+
+.btn-tool {
+    width: 400px;
+    height: 32px;
+}
+
+.default-btn {
+    display: block;
+    width: 70px;
+    height: 20px;
+    padding: 6px;
+    border: 1px solid #dddddd;
+    background: #ffffff;
+    color: #666666;
+    font: 14px/20px 'microsoft yahei';
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.default-btn:focus {
+    outline: none;
+}
+
+.default-btn:hover {
+    background: #dddddd;
+    color: #000000;
+}
+.toolbar {
+    border-bottom: none;
+}
+
+.hover {
+    background: #dddddd;
+    color: #000000;
+}
+
+.base-content {
+    width: 400px;
+    height: auto;
+    overflow: hidden;
+}
+
+.main-content{
+    width: 398px;
+    height: auto;
+    min-height: 200px;
+}
+
+.default-text {
+    width: 370px;
+    height: auto;
+    min-height: 200px;
+    border: 1px solid #dddddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    resize: vertical;
+    font-size: 14px;
+}
+
+.default-text:focus {
+    outline: none;
+}
+
+.btn-bottom .default-btn {
+    float: right;
+    background: #19b4ea;
+    color: #ffffff;
+    width: 50px;
+}
+
+.btn-bottom .clear {
+    background: #ffffff;
+    color: black;
+}
+
+.online-tool a {
+    color: #444444;
+}
+
+div.online-tool {
+    border: 1px solid #dddddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 370px;
+}

@@ -1,0 +1,36 @@
+{
+  "name": "util",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "developer util",
+  "icons" : {
+    "16" : "icon.png",
+    "48" : "icon.png",
+    "128" : "icon.png"
+  },
+  "browser_action": {
+    "default_title": "util",
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*"
+      ],
+      "css": [
+        "custom.css"
+      ],
+      "js": [
+        "custom.js",
+        "jquery.min.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": [
+    "cookies",
+    "notifications"
+  ]
+}

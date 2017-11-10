@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Util</title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="custom.js"></script>
+    <link rel="stylesheet" type="text/css" href="custom.css">
+</head>
+<body>
+<div id="content">
+    <div class="btn-tool">
+        <a class="toolbar default-btn sql-param-in" tag="sql-param-in" href="javascript:;">IN参数</a>
+        <a class="toolbar default-btn online-tool hover" tag="online-tool" href="javascript:;">在线工具</a>
+    </div>
+    <div class="base-content sql-param-in" tag="sql-param-in">
+        <div class="main-content">
+            <textarea class="default-text sql-param-in-text"
+                      placeholder="为sql的参数加单引号，例如：zhangsan,lisi --> 'zhangsan', 'lisi'"></textarea>
+        </div>
+        <div class="btn-bottom">
+            <a class="default-btn sql-param-in-btn" href="javascript:;">转换</a>
+            <a class="default-btn clear" href="javascript:;">清空</a>
+        </div>
+        <div class="util-desc">
+            <ul>
+                <li>支持中文逗号，分号，冒号</li>
+                <li>支持英文逗号，分号，冒号</li>
+                <li>支持空格，换行</li>
+                <li>支持上述符号并存</li>
+            </ul>
+        </div>
+    </div>
+    <div class="base-content online-tool" tag="online-tool" style="display: none">
+        <div class="btn-bottom">
+            <label>在线工具集合：</label>
+            <a class="target-href" href="http://tool.oschina.net/" target="_blank">http://tool.oschina.net/</a>
+            <br/>
+            <label>在线工具集合：</label>
+            <a class="target-href" href="http://tool.lu/" target="_blank">http://tool.lu/</a>
+            <br/>
+            <label>JSON：</label>
+            <a class="target-href" href="https://www.json.cn/" target="_blank">https://www.json.cn/</a>
+            <br/>
+            <label>JSON：</label>
+            <a class="target-href" href="http://www.sojson.com/" target="_blank">http://www.sojson.com/</a>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    $(function () {
+        $(document).ready(function () {
+            Util.init('sql-param-in');
+        })
+    })
+</script>
+</html>
